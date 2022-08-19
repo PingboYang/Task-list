@@ -1,0 +1,24 @@
+.cards{
+    margin: 0 auto;
+    max-width:1000px;
+    display:grid;
+    
+    gap:20px;
+    font-family: sans-serif;
+    padding-top: 50px;
+    grid-template-columns: repeat(auto-fill, minmax(225px,1fr));
+}
+
+.card{
+    box-shadow: 0 0 3px rgba(0,0,0,1);
+}
+.card-footer{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    background: #eeeeee;
+    font-size: 0.8em;
+    border-bottom: 2px solid #cccccc;
+    font-weight: bold;
+}
+
