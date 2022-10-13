@@ -14,28 +14,42 @@
 <body>
     <header>
         <h1>Task list 2022</h1>
-    </header>
+    </header> 
 
     <h4>Task List</h4>
-    <form action="/action_page.php">
-        <div class="content-text mb-5 mt-5">
+    <form >
+        <div class="content-text mb-2 mt-2">
           <label for="content" class="form-label">Task Name:</label>
-          <input type="text" class="form-control" id="content" placeholder="What is your task">
+          <input type="text" class="form-control" id="name" placeholder="What is your task">
+          <div id="name-error" class="alert alert-danger invisible"  role="alert">
+            Input your name 
+          </div>
         </div>
-        <div class="content-text mb-5 mt-5">
+        <div class="content-text mb-2 mt-2">
           <label for="content" class="form-label">Task Description:</label>
-          <input type="text" class="form-control" id="content" placeholder="Description your task">
+          <input type="text" class="form-control" id="description" placeholder="Description your task">
+          <div id="description-error" class="alert alert-danger invisible"  role="alert">
+            Input your description
+          </div>
         </div>
-        <div class="content-text mb-5 mt-5">
+        <div class="content-text mb-2 mt-2">
             <label for="content" class="form-label">Assigned To:</label>
-            <input type="text" class="form-control" id="content">
+            <input type="text" class="form-control" id="assigned">
+            <div id="assigned-error" class="alert alert-danger invisible"  role="alert">
+              Input assigned to
+            </div>
+            
           </div>
-          <div class="content-text mb-5 mt-5">
+          <div class="content-text mb-2 mt-2">
             <label for="content" class="form-label">Due Date:</label>
-            <input type="text" class="form-control" id="content" >
+            <input type="text" class="form-control" id="dueDate" >
+            <div id="dueDate-error" class="alert alert-danger invisible"  role="alert">
+              Input Due date
+            </div>
+            
           </div>
-        <div class="content-text mb-5 mt-5">
-            <input type="submit" id="content" value="ADD task">
+        <div class="content-text mb-2 mt-2">
+          <button id="button" type="button">Add Task</button>
         </div>
 
     </form>
@@ -134,6 +148,7 @@
 
       
   </div>
-    
+  <script  src="./files/JS/taskManager.js"></script>
+  <script  src="./files/JS/index.js"></script>
 </body>
 </html>
