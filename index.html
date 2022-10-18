@@ -42,12 +42,13 @@
           </div>
           <div class="content-text mb-2 mt-2">
             <label for="content" class="form-label">Due Date:</label>
-            <input type="text" class="form-control" id="dueDate" >
+            <input type="date" class="form-control" id="dueDate" placeholder="Due Date" >
+            <input id="datepicker" type="text">
             <div id="dueDate-error" class="alert alert-danger invisible"  role="alert">
               Input Due date
             </div>
-            
           </div>
+
         <div class="content-text mb-2 mt-2">
           <button id="button" type="button">Add Task</button>
         </div>
@@ -55,92 +56,8 @@
     </form>
 
 
-    <div class="cards">
-        <div class="card">
-          <div class="card-header">
-            Task 1
-          </div>
-          <div class="list">
-          <ul class="list-group  list-group-flush">
-            <p class="list-group-item">Name</p>
-            <p class="list-group-item">Description</p>
-            <p class="list-group-item">Assigned to</p>
-            <p class="list-group-item">Due date</p>
-          </ul>
-        </div>
-          <div class="card-footer">
-            <button type="button" class="btn btn-success">In progress</button>
-            <button type="button" class="btn btn-primary">Delete</button>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-header">
-            Task 1
-          </div>
-          <div class="list">
-          <ul class="list-group  list-group-flush">
-            <p class="list-group-item">Name</p>
-            <p class="list-group-item">Description</p>
-            <p class="list-group-item">Assigned to</p>
-            <p class="list-group-item">Due date</p>
-          </ul>
-        </div>
-          <div class="card-footer">
-            <button type="button" class="btn btn-success">In progress</button>
-            <button type="button" class="btn btn-primary">Delete</button>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-header">
-            Task 1
-          </div>
-          <div class="list">
-          <ul class="list-group  list-group-flush">
-            <p class="list-group-item">Name</p>
-            <p class="list-group-item">Description</p>
-            <p class="list-group-item">Assigned to</p>
-            <p class="list-group-item">Due date</p>
-          </ul>
-        </div>
-          <div class="card-footer">
-            <button type="button" class="btn btn-success">In progress</button>
-            <button type="button" class="btn btn-primary">Delete</button>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-header">
-            Task 1
-          </div>
-          <div class="list">
-          <ul class="list-group  list-group-flush">
-            <p class="list-group-item">Name</p>
-            <p class="list-group-item">Description</p>
-            <p class="list-group-item">Assigned to</p>
-            <p class="list-group-item">Due date</p>
-          </ul>
-        </div>
-          <div class="card-footer">
-            <button type="button" class="btn btn-success">In progress</button>
-            <button type="button" class="btn btn-primary">Delete</button>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-header">
-            Task 1
-          </div>
-          <div class="list">
-          <ul class="list-group  list-group-flush">
-            <p  class="list-group-item">Name</p>
-            <p class="list-group-item">Description</p>
-            <p class="list-group-item">Assigned to</p>
-            <p class="list-group-item">Due date</p>
-          </ul>
-        </div>
-          <div class="card-footer">
-            <button type="button" class="btn btn-success">In progress</button>
-            <button type="button" class="btn btn-primary">Delete</button>
-          </div>
-        </div>
+    <div id="tasks-list" class="cards">
+        
 
     </div>
 

@@ -2,7 +2,7 @@ const taskManager = new TaskManager();
 
 function addTask(e){
 
-    const newName=document.querySelector('#name');
+    const newName=document.querySelector('#name')
     const nameError=document.querySelector('#name-error');
     const hasName=requireField(newName,nameError);
 
@@ -17,7 +17,7 @@ function addTask(e){
     const newDueDate=document.querySelector('#dueDate');
     const dueDateError=document.querySelector('#dueDate-error');
     const hasDueDate=requireField(newDueDate,dueDateError);
-    
+
     const isValid = hasName && hasDescription && hasAssigned && hasDueDate;
     if(isValid){
         taskManager.addTask(newName.value, newDescription.value, newAssigned.value, newDueDate.value);
@@ -28,6 +28,9 @@ function addTask(e){
     newDescription.value="";
     newAssigned.value="";
     newDueDate.value="";
+
+    taskManager.render();
+
     
 
 }
